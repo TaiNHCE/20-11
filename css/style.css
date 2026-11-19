@@ -16,3 +16,11 @@ body{overflow-x:clip}
 .music:disabled{opacity:.65;cursor:default}
 .letter-prints .polaroid{position:absolute;width:clamp(112px,15vw,175px);top:27%;left:1%;--tilt:-12deg}
 .letter-prints .polaroid:nth-child(2){width:clamp(96px,12vw,145px);top:34%;left:auto;right:0;--tilt:10deg}
+/* Keep the flowers above the bouquet's full-size touch target. */
+.garden #hold-bouquet{z-index:0}
+#rose-buttons{position:absolute;inset:0;z-index:1;pointer-events:none}
+#rose-buttons .rose-button{pointer-events:auto;touch-action:manipulation}
+#rose-buttons img{pointer-events:none}
+#wish-picker{display:flex;justify-content:center;gap:8px;margin:0 auto 6px}
+#wish-picker button{width:44px;height:44px;padding:0;border:1px solid #a56a79;border-radius:50%;background:var(--paper);color:var(--wine);touch-action:manipulation}
+#wish-picker button[aria-pressed=true]{background:var(--wine);color:var(--paper)}

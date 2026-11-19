@@ -7,11 +7,11 @@
 <link rel="icon" href="assets/images/roses/rose.svg" type="image/svg+xml">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Dancing+Script:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css">
-<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="css/style.css?v=2"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css?v=2">
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"></script>
-<script defer src="js/config.js"></script><script defer src="js/particles.js"></script><script defer src="js/audio.js"></script><script defer src="js/slideshow.js"></script><script defer src="js/interactions.js"></script><script defer src="js/scenes.js"></script><script defer src="js/main.js"></script>
+<script defer src="js/config.js"></script><script defer src="js/particles.js"></script><script defer src="js/audio.js"></script><script defer src="js/slideshow.js"></script><script defer src="js/interactions.js?v=2"></script><script defer src="js/scenes.js"></script><script defer src="js/main.js"></script>
 </head>
 <body>
 <header class="mast"><a class="brand" href="#thiep"><span class="seal-mini" aria-hidden="true">♡</span> Sổ lưu bút <i>·</i> 20/11</a><button id="music" class="music" type="button" aria-pressed="false" disabled><span aria-hidden="true">♫</span> <span id="music-label">Bật nhạc</span></button></header>
@@ -82,12 +82,13 @@
 </section>
 <section class="scene" id="vuon-hong" hidden aria-labelledby="garden-title">
   <h2 class="scene-title reveal" id="garden-title" tabindex="-1">Một vườn hồng <em>dành cho cô</em></h2>
-  <p class="control-hint">Chạm vào từng bông hoa hoặc nhấn giữ bó hoa.</p>
+  <p class="control-hint">Chạm vào một bông hồng hoặc chọn số để đọc lời chúc. Nhấn giữ bó hoa để mở lời chúc bí mật.</p>
+  <p id="wish" role="status" aria-atomic="true" class="wish">Mỗi bông hoa cất một lời chúc.</p>
+  <div id="wish-picker" role="group" aria-label="Chọn lời chúc"></div>
   <div class="garden reveal">
     <button type="button" id="hold-bouquet" aria-label="Mở lời chúc bí mật trong bó hoa"><img class="bouquet" src="assets/images/roses/bouquet.svg" alt=""></button>
     <div id="rose-buttons"></div>
   </div>
-  <p id="wish" role="status" class="wish">Mỗi bông hoa cất một lời chúc.</p>
   <button class="primary" data-go="loi-ket">Gửi cô bó hoa này <span aria-hidden="true">→</span></button>
 </section>
 <section class="scene finale" id="loi-ket" hidden aria-labelledby="final-title">

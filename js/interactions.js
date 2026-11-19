@@ -15,6 +15,7 @@ function setupGarden() {
   const points = [[27,39], [40,23], [61,20], [74,38], [51,46]];
   const wish = find('#wish');
   const bouquet = find('#hold-bouquet');
+  const choices = [];
 
   function bloom(button, message, count) {
     const bounds = button.getBoundingClientRect();
@@ -33,10 +34,22 @@ function setupGarden() {
     rose.src = 'assets/images/roses/rose.svg';
     rose.alt = '';
     button.append(rose);
-    button.addEventListener('click', () => {
+    const choice = document.createElement('button');
+    choice.type = 'button';
+    choice.textContent = index + 1;
+    choice.setAttribute('aria-label', 'Lời chúc ' + (index + 1));
+    choice.setAttribute('aria-pressed', 'false');
+    choices.push(choice);
+
+    function showWish() {
       button.setAttribute('aria-pressed', 'true');
+      choices.forEach(option => option.setAttribute('aria-pressed', String(option === choice)));
       bloom(button, message, 14);
-    });
+    }
+
+    button.addEventListener('click', showWish);
+    choice.addEventListener('click', showWish);
+    find('#wish-picker').append(choice);
     find('#rose-buttons').append(button);
   });
 
@@ -45,6 +58,7 @@ function setupGarden() {
   const secret = () => {
     fired = true;
     bloom(bouquet, tribute.secret, 54);
+    choices.forEach(choice => choice.setAttribute('aria-pressed', 'false'));
     all('.rose-button').forEach(button => button.setAttribute('aria-pressed', 'true'));
   };
   bouquet.addEventListener('pointerdown', () => {

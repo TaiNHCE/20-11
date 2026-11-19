@@ -2,3 +2,12 @@
 @media(max-width:590px){.mast,.foot{width:calc(100% - 32px)}.mast{min-height:62px}.brand{font-size:16px;gap:6px}.seal-mini{width:25px;height:25px}.music{font-size:12px;padding:6px 10px}.scene{width:calc(100% - 34px);padding:24px 0}.cover-layout{grid-template-columns:minmax(0,1fr);gap:12px}.invitation{min-height:380px}.card-copy{padding:26px 22px}.date{font-size:clamp(72px,23vw,105px)}.cover-floral{width:155px;left:-66px;bottom:-30px}.cover-memories{height:245px;width:min(100%,350px);margin:auto}.main-print{width:62%;left:7%;top:8%}.portrait-print{width:29%;top:28%;right:6%}.stamp{width:57px;font-size:6px;right:3%;top:5%;border-width:3px}.stamp b{font-size:19px}.scrapbook-heart{top:1%;left:0;font-size:37px}.cover-memories .handnote{bottom:4%;left:12%;font-size:21px}.flight{bottom:6%}.board-layout{padding:0 0 90px}.board{width:100%;border-width:10px;padding-block:33px 45px}.board h2{font-size:clamp(43px,11vw,64px)}.board-prints .polaroid{width:23%;top:auto!important;bottom:0!important}.board-prints .polaroid:nth-child(2){left:27%}.board-prints .polaroid:nth-child(3){left:53%;right:auto}.board-note{right:0;bottom:2%;font-size:15px;padding:7px}.polaroid{padding:5px 5px 4px}.polaroid:after{height:16px;top:-7px}.letter-layout{margin-top:6px;padding:12px 11px 51px}.letter{font-size:14px;padding:23px 6%}.letter-floral{width:94px;right:-9px}.collage{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 13px;margin-inline:6px}.film{padding:10px 9px 8px}.film-controls{gap:8px}.film img{height:min(43vh,320px)}.foot{min-height:57px;gap:7px}.foot button{font-size:11px;padding-inline:8px}.foot #chapter{text-align:center}.final-stage{padding:18px 9px 24px}}
 @media(max-width:365px){.brand{font-size:14px}.eyebrow{font-size:9px}.card-copy>p:not(.eyebrow){font-size:12px}.film-controls{gap:6px}.film-controls button{width:39px;height:39px}}
 @media(max-width:780px){.letter-prints{display:none}}
+@media(max-width:590px){
+  .cover-memories{height:auto;padding-top:clamp(216px,65vw,280px);padding-bottom:5px}
+  .cover-memories .main-print{top:16px}
+  .cover-memories .portrait-print{top:clamp(67px,20vw,84px)}
+  .cover-memories .handnote{position:relative;left:auto;bottom:auto;transform:none;font-size:23px}
+  .cover-memories .flight{display:none}
+  .rose-button{width:clamp(58px,18vw,93px)}
+  #vuon-hong .wish{min-height:3.75em;margin-top:10px}
+}
