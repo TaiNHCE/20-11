@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8dde5">
+<title>Gửi cô, từ những ngày áo trắng · 20/11</title>
+<link rel="icon" href="assets/images/roses/rose.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Dancing+Script:wght@500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/swiper@11.2.10/swiper-bundle.min.js"></script>
+<script defer src="js/config.js"></script><script defer src="js/particles.js"></script><script defer src="js/audio.js"></script><script defer src="js/slideshow.js"></script><script defer src="js/interactions.js"></script><script defer src="js/scenes.js"></script><script defer src="js/main.js"></script>
+</head>
+<body>
+<header class="mast"><a class="brand" href="#thiep"><span class="seal-mini" aria-hidden="true">♡</span> Sổ lưu bút <i>·</i> 20/11</a><button id="music" class="music" type="button" aria-pressed="false" disabled><span aria-hidden="true">♫</span> <span id="music-label">Bật nhạc</span></button></header>
+<main>
+<section class="scene cover active" id="thiep" aria-labelledby="cover-title">
+  <div class="cover-layout">
+    <div class="invitation">
+      <img class="bouquet cover-floral" src="assets/images/roses/bouquet.svg" alt="">
+      <div class="card-copy">
+        <p class="eyebrow">NGÀY NHÀ GIÁO VIỆT NAM</p>
+        <div class="date" aria-hidden="true">20<span>/</span>11</div>
+        <div class="divider" aria-hidden="true">♡</div>
+        <h1 id="cover-title" tabindex="-1">Gửi cô, từ những<br>ngày áo trắng</h1>
+        <p>Một tấm thiệp nhỏ, dành riêng cho cô.</p>
+        <button id="open-gift" class="primary" type="button">Chạm để mở món quà <span aria-hidden="true">↗</span></button>
+      </div>
+    </div>
+    <div class="cover-memories" aria-label="Kỷ niệm bên cô và các bạn">
+      <div class="stamp" aria-hidden="true">VIỆT NAM <b>♡</b> 20 THÁNG 11</div>
+      <figure class="polaroid main-print"><img src="assets/images/memories/3.jpg" alt="Cô và cả lớp chụp ảnh trong phòng học"><figcaption>Một thời áo trắng</figcaption></figure>
+      <figure class="polaroid portrait-print"><img src="assets/images/memories/2.jpg" alt="Cô mặc áo dài hồng, ôm bó hoa"><figcaption>Gửi cô ♡</figcaption></figure>
+      <span class="scribble scrapbook-heart" aria-hidden="true">♡</span>
+      <div class="handnote" aria-hidden="true">Thương gửi cô,<br>từ cả lớp!</div>
+      <span class="flight" aria-hidden="true">✧</span>
+    </div>
+  </div>
+</section>
+<section class="scene" id="bang-phan" hidden aria-labelledby="board-title">
+  <div class="board-layout">
+    <div class="board-prints" aria-hidden="true"></div>
+    <div class="board reveal">
+      <div class="chalk-doodle book" aria-hidden="true"><svg viewBox="0 0 120 75"><path d="M60 60Q35 40 9 54l6-41q29-7 45 12 20-18 45-12l6 41Q85 42 60 60Zm0 0V25M20 25q16-3 32 9m-33 2q15-3 33 9m17-12q16-11 30-8m-30 19q15-11 31-8"/></svg></div>
+      <div class="chalk-doodle plane" aria-hidden="true"><svg viewBox="0 0 145 105"><path d="M32 38 130 13 101 66 74 53 61 68 63 46 130 13M74 53l-11-7M32 38l31 8M53 78C23 107 3 82 21 68" /></svg></div>
+      <span class="chalk-heart" aria-hidden="true">♡</span>
+      <h2 id="board-title" tabindex="-1"><span>Chúc mừng</span><span>Ngày Nhà giáo</span><span>Việt Nam</span><strong>20/11</strong></h2>
+      <div class="chalk-tray" aria-hidden="true"><i></i><i></i></div>
+    </div>
+    <div class="board-note handnote" aria-hidden="true">Gửi cô<br>ngàn lời cảm ơn!</div>
+  </div>
+  <button class="primary" data-go="buc-thu">Tiếp tục khám phá <span aria-hidden="true">→</span></button>
+</section>
+<section class="scene" id="buc-thu" hidden aria-labelledby="letter-title">
+  <div class="letter-prints" aria-hidden="true"></div>
+  <div class="letter-layout reveal"><div class="envelope" aria-hidden="true"><div class="envelope-flap"></div><div class="envelope-pocket"></div></div>
+    <article class="letter"><p class="eyebrow">THƯ TRI ÂN · 20/11</p><h2 id="letter-title" tabindex="-1">Gửi cô kính yêu,</h2><div id="letter-body"></div><p class="sign">Thương mến,<br>Chúng em ♡</p></article>
+    <img class="bouquet letter-floral" src="assets/images/roses/bouquet.svg" alt="">
+  </div>
+  <button class="primary" data-go="ky-niem">Xem những kỷ niệm <span aria-hidden="true">→</span></button>
+</section>
+<section class="scene" id="ky-niem" hidden aria-labelledby="collage-title">
+  <h2 class="scene-title reveal" id="collage-title" tabindex="-1">Ngày Nhà giáo Việt Nam <em>20/11</em></h2>
+  <div id="collage" class="collage"></div>
+  <button class="primary" data-go="album">Mở album ảnh <span aria-hidden="true">→</span></button>
+</section>
+<section class="scene" id="album" hidden aria-labelledby="album-title">
+  <h2 class="scene-title reveal" id="album-title" tabindex="-1">Những ngày <em>áo trắng</em></h2>
+  <div class="film reveal">
+    <div class="film-window swiper" aria-label="Album ảnh"><div class="swiper-wrapper" id="slides"></div></div>
+    <div class="film-controls">
+      <button type="button" id="prev" aria-label="Ảnh trước">‹</button>
+      <span id="slide-count"></span><progress id="slide-progress" max="1" value="0" aria-label="Tiến trình ảnh"></progress>
+      <button type="button" id="play-slides" aria-label="Tạm dừng trình chiếu">Ⅱ</button>
+      <button type="button" id="next" aria-label="Ảnh sau">›</button>
+    </div>
+  </div>
+  <p class="control-hint">Vuốt để đổi ảnh · Chạm ảnh để xem lớn</p>
+  <button class="primary" data-go="vuon-hong">Khám phá vườn hồng <span aria-hidden="true">→</span></button>
+</section>
+<section class="scene" id="vuon-hong" hidden aria-labelledby="garden-title">
+  <h2 class="scene-title reveal" id="garden-title" tabindex="-1">Một vườn hồng <em>dành cho cô</em></h2>
+  <p class="control-hint">Chạm vào từng bông hoa hoặc nhấn giữ bó hoa.</p>
+  <div class="garden reveal">
+    <button type="button" id="hold-bouquet" aria-label="Mở lời chúc bí mật trong bó hoa"><img class="bouquet" src="assets/images/roses/bouquet.svg" alt=""></button>
+    <div id="rose-buttons"></div>
+  </div>
+  <p id="wish" role="status" class="wish">Mỗi bông hoa cất một lời chúc.</p>
+  <button class="primary" data-go="loi-ket">Gửi cô bó hoa này <span aria-hidden="true">→</span></button>
+</section>
+<section class="scene finale" id="loi-ket" hidden aria-labelledby="final-title">
+  <div class="final-stage reveal">
+    <div id="flying-photos" aria-hidden="true"></div>
+    <img class="bouquet final-floral" src="assets/images/roses/bouquet.svg" alt="">
+    <p class="eyebrow">HAPPY TEACHERS’ DAY</p>
+    <div class="date final-date" aria-hidden="true">20<span>/</span>11</div>
+    <h2 class="scene-title" id="final-title" tabindex="-1">Cảm ơn cô vì những<br><em>tháng năm tuyệt đẹp!</em></h2>
+    <div class="final-actions"><button class="primary" data-go="album">Xem lại kỷ niệm</button><button class="secondary" data-go="buc-thu">Mở lại bức thư</button><button class="secondary" id="final-music" type="button">Bật nhạc</button></div>
+  </div>
+</section>
+</main>
+<footer class="foot"><button id="back" type="button" hidden>← Trang trước</button><span id="chapter">Kính tặng cô nhân ngày 20/11</span><span id="position" aria-hidden="true"></span></footer>
+<dialog id="lightbox" aria-label="Ảnh kỷ niệm phóng to"><button id="close-photo" type="button" aria-label="Đóng ảnh">×</button><img alt=""><p></p></dialog>
+<canvas id="petals" aria-hidden="true"></canvas>
+<audio id="background" src="assets/audio/background.mp3" preload="auto" loop></audio>
+</body>
+</html>
